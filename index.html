@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--Image Reference:https://iconscout.com/icon/cycling-2199279-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Svg Cycle Animation</title>
+        <style>
+            svg{
+                border:1px black solid;
+            }
+            .rotate{
+                transform-origin: center;
+                transform-box: fill-box;
+                animation-name:move;
+                animation-duration:2s;
+                animation-iteration-count: infinite;
+                animation-timing-function:linear;
+            }
+            @keyframes move{
+                from{
+                    transform:rotate(0deg);
+                }
+                to{
+                    transform:rotate(360deg);
+                }
+            }
+        </style>
+    </head>
+    <body>
+    <!--Reference : https://iconscout.com/icon/cycling-2199279-->
+    <svg width="401px" height="381px">
+    
+        <!--Face-->
+        <path d="M 195 67 Q 239,111 243 55" fill="white" stroke="black" stroke-width="5px" stroke-linecap="round"></path>
+        <line x1 = "192" y1="67" x2="214" y2="43" stroke="black" stroke-width="5px" stroke-linecap="round"></line>
+        <path d="M 216 43 L 259,43 Q 253,10 213 14 L 214,43" fill="rgba(255, 0, 0,0.7)" stroke="black" stroke-width="5px" stroke-linecap="round"></path>
+        <path fill="transparent" d="M 223 27 Q 241,27 244 33" stroke="black" stroke-width="4px" stroke-linecap="round"></path>
+        <polygon points="240,45 259,45 273,68" stroke="black" stroke-width="5px" stroke-linecap="round" fill="white"></polygon>
+    
+    
+        <!--Seat-->
+        <rect stroke="black" stroke-width="3px" x="97" y="183" width="40px" height="10px" rx="5" fill="rgba(255,0,0,0.7)"></rect>
+    
+        <!--One Leg Part-->
+        <path d="M165 175 Q 233,182 200 228" stroke-width="5px" fill="rgba(235, 188, 0,0.7)" stroke="black">
+            <animate attributeName="d" values="
+            M165 175 Q 211,182 200 230;
+            M165 175 Q 189,182 200 230;
+            M165 175 Q 205,182 200 230;
+            M165 175 Q 211,182 200 230" dur="1.0s"  repeatCount="indefinite"></animate>
+        </path>
+        
+        
+        
+        <!--Frame of cycle-->
+        <polyline points="64,190 73,209 276,211 201,305 276,211 73,209" stroke="black" stroke-width="5px" stroke-linecap="round"></polyline>
+        <g class="rotate">
+        
+        <circle cx="81" cy="313" r="63" stroke="black" stroke-width="5px" fill="white" transform="translate(245,0)"></circle>
+        <g transform="translate(245,0)">
+            <line x1="76" y1="310" x2="20" y2="291" stroke="black" stroke-width="5px"></line>
+        <line x1="94" y1="304" x2="134" y2="274" stroke="black" stroke-width="5px"></line>
+        <line x1="82" y1="330" x2="87" y2="376" stroke="black" stroke-width="5px"></line>
+        </g>
+        </g>
+        
+        <!--Handlebar-->
+        <path d="M 311,202 L 326,183 L 285,183 L 271,196 L 321,301 L271,196 L285,183 L326,183" stroke="black" stroke-width="5px" stroke-linecap="round"></path>
+        
+        
+        <!--Wheels-->
+        <g class="rotate">
+        <circle cx="81" cy="313" r="63" stroke="black" stroke-width="5px" fill="white"></circle>
+        <line x1="76" y1="310" x2="20" y2="291" stroke="black" stroke-width="5px"></line>
+        <line x1="94" y1="304" x2="134" y2="274" stroke="black" stroke-width="5px"></line>
+        <line x1="82" y1="330" x2="87" y2="376" stroke="black" stroke-width="5px"></line>
+        </g>
+        
+        <!--Peddle gear-->
+        <circle cx="185px" cy="313px" r="16" stroke="black"  stroke-width="5px" fill="transparent"></circle>
+        
+        <circle cx="185px" cy="313px" r="16" stroke="black"  stroke-width="5px" fill="white" transform="translate(-104,0)"></circle>
+        <circle cx="185px" cy="313px" r="16" stroke="black"  stroke-width="5px" fill="white" transform="translate(142,0)"></circle>
+        <line x1="172" y1="315" x2="99" y2="313" stroke="black" stroke-width="5px" stroke-linecap="round"></line>
+        <line x1="155" y1="211" x2="89" y2="297" stroke="black" stroke-width="5px" stroke-linecap="round"></line>
+        
+        
+        
+        <!--Draws the body-->
+        <path d="M 107 174 Q 112,82 189,64 Q 218,78 221 91 Q 237,122 277 170 C 295,176 284,191 271 178 L 238 146 L 206 108 Q 183,128 176 130 Q 158,143 164 174 L 196 225 Q 205,238  194 245 L 180,307L 168 304L 174 238 Q 144,214 107 174" stroke-width="5px" fill="rgba(235, 188, 0)" stroke="black" stroke-linecap="round">
+        <animate attributeName="d" values="M 107 174 Q 112,82 189,64 Q 218,78 221 91 Q 237,122 277 170 C 295,176 284,191 271 178 L 238 146 L 206 108 Q 183,128 176 130 Q 158,143 164 174 L 196 225 Q 205,238  194 245 L 180,307L 168 304L 174 238 Q 144,214 107 174;
+        M 107 174 Q 112,82 189,64 Q 218,78 221 91 Q 237,122 277 170 C 295,176 284,191 271 178 L 238 146 L 206 108 Q 183,128 176 130 Q 158,143 164 174 L 196 210 Q 205,226  194 233 L 179,295L 168 304L 174 230 Q 144,214 107 174;
+        M 107 174 Q 112,82 189,64 Q 218,78 221 91 Q 237,122 277 170 C 295,176 284,191 271 178 L 238 146 L 206 108 Q 183,128 176 130 Q 158,143 164 174 L 196 225 Q 205,238  194 245 L 193,307L 182 319L 174 238 Q 144,214 107 174;
+        M 107 174 Q 112,82 189,64 Q 218,78 221 91 Q 237,122 277 170 C 295,176 284,191 271 178 L 238 146 L 206 108 Q 183,128 176 130 Q 158,143 164 174 L 196 225 Q 205,238  194 245 L 180,307L 168 304L 174 238 Q 144,214 107 174" dur="1s" repeatCount="indefinite" />
+
+        </path>
+        
+        <line x1="107" y1="174" x2="165" y2="175" stroke="black" stroke-width="5px"></line>
+        
+        <path d="M 168,305 L 166,326 L 195,332 L 180,310" stroke="black" stroke-width="5px" stroke-linecap="round" fill="white">
+            <animate attributeName="d" values="
+            M 168,305 L 166,326 L 195,332 L 180,310;
+            M 168,305 L 172,321 L 205,313 L 183,299;
+            M 184,324 L 186,326 L 218,326 L 194,307;
+            M 168,305 L 166,326 L 195,332 L 180,310" dur="1s" repeatCount="indefinite"></animate>
+        </path>
+        
+         
+        
+        
+    </svg>
+
+    </body>
+</html>
